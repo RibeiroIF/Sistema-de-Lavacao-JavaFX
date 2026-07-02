@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsc.fln.controller.FXMLAPRelatorioServicosController">
+    <children>
+        <TableView fx:id="tableView" layoutX="-1.0" prefHeight="459.0" prefWidth="642.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="tableColumnServicoID" prefWidth="82.0" text="ID" />
+                <TableColumn fx:id="tableColumnServicoDescricao" prefWidth="254.0" text="Descrição" />
+                <TableColumn fx:id="tableColumnServicoValor" prefWidth="130.0" text="Valor" />
+                <TableColumn fx:id="tableColumnServicoCategoria" prefWidth="175.0" text="Categoria" />
+            </columns>
+        </TableView>
+        <Button fx:id="buttonImprimir" layoutX="513.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleImprimir" text="Imprimir" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="20.0" />
+    </children>
+</AnchorPane>

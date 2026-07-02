@@ -1,0 +1,88 @@
+/* ==========================================
+   1. BARRA DE MENU GERAL
+   ========================================== */
+.menu-bar {
+    -fx-background-color: #5dade2;
+    -fx-padding: 0px !important;
+    -fx-background-insets: 0px !important;
+    -fx-border-width: 0px !important;
+}
+
+/* Container interno que segura os botões */
+.menu-bar > .container {
+    -fx-alignment: center-left;
+    -fx-max-width: 20000;
+    -fx-width: 100%;
+    -fx-padding: 0px !important;
+    -fx-background-insets: 0px !important;
+}
+
+/* ==========================================
+   2. BOTÕES PRINCIPAIS (CENTRALIZADOS)
+   ========================================== */
+.menu-bar .menu {
+    -fx-pref-height: 40px;
+    -fx-pref-width: 128.4px; /* 642px dividido por 5 */
+    -fx-max-width: 20000;
+    -fx-alignment: center !important;
+
+    -fx-background-insets: 0px !important;
+    -fx-background-radius: 0px !important;
+
+    -fx-border-color: transparent #2c3e50 transparent transparent;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+}
+
+/* Texto dos botões principais */
+.menu-bar > .container > .menu > .label {
+    -fx-font-weight: bold !important;
+    -fx-font-size: 16px !important;
+    -fx-text-fill: #2c3e50 !important;
+    -fx-alignment: center !important;
+}
+
+/* Efeito Hover nos botões principais */
+.menu-bar > .container > .menu:hover,
+.menu-bar > .container > .menu:showing {
+    -fx-background-color: #3498db !important;
+    -fx-background-insets: 0px !important;
+    -fx-background-radius: 0px !important;
+}
+
+/* Texto branco no Hover */
+.menu-bar > .container > .menu:hover > .label,
+.menu-bar > .container > .menu:showing > .label {
+    -fx-text-fill: white !important;
+}
+
+#ultimoMenu {
+    -fx-border-color: transparent !important;
+}
+
+/* ==========================================
+   3. DROPDOWN (TEXTO ESCURO E FUNDO BRANCO)
+   ========================================== */
+.context-menu {
+    -fx-background-color: #ffffff !important;
+    -fx-border-color: #b2b2b2 !important;
+    -fx-border-width: 1px !important;
+    -fx-padding: 5px 0px 5px 0px !important;
+}
+
+.context-menu .menu-item .label {
+    -fx-text-fill: #2c3e50 !important;
+    -fx-font-weight: normal !important;
+    -fx-font-size: 14px !important;
+    -fx-alignment: center-left !important;
+}
+
+.context-menu .menu-item:focused,
+.context-menu .menu-item:hover {
+    -fx-background-color: #3498db !important;
+}
+
+.context-menu .menu-item:focused .label,
+.context-menu .menu-item:hover .label {
+    -fx-text-fill: white !important;
+}

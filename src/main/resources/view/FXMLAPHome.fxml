@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="imageViewBackground" fitHeight="97.0" fitWidth="83.0" layoutX="556.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="6.0">
+            <image>
+                <Image url="@../icon/IFSC_logo_completo.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imageViewBackground2" fitHeight="260.0" fitWidth="268.0" layoutX="192.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icon/Aquaman_logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="143.0" text="Lava-car Aquaman">
+            <font>
+                <Font name="System Bold Italic" size="40.0" />
+            </font>
+        </Label>
+        <Label layoutX="121.0" layoutY="313.0" text="Atividade Final - Sistema de Lavação">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="157.0" layoutY="340.0" text="Programação Orientada a Objeto II">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="220.0" layoutY="392.0" text="Prof: Marcos Andre Pisching">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="252.0" layoutY="409.0" text="Curso: CTDS - IFSC">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="207.0" layoutY="375.0" text="Aluno: Gabriel Ribeiro de Souza">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

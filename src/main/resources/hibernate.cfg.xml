@@ -1,0 +1,30 @@
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_lavacao</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="br.edu.ifsc.fln.model.domain.PessoaFisica"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.PessoaJuridica"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Cliente"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Cor"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.ECategoria"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.EStatus"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.ETipoCombustivel"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.IDados"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.ItemOS"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.ParametrosSistema"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Marca"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Modelo"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Motor"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.OrdemServico"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Pontuacao"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Servico"/>
+        <mapping class="br.edu.ifsc.fln.model.domain.Veiculo"/>
+    </session-factory>
+</hibernate-configuration>
